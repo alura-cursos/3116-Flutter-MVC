@@ -1,4 +1,4 @@
-package com.example.mvc_planejamento
+package com.example.grimorio
 
 import io.flutter.embedding.android.FlutterActivity
 

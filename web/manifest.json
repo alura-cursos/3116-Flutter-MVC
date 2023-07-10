@@ -1,6 +1,6 @@
 {
-    "name": "mvc_planejamento",
-    "short_name": "mvc_planejamento",
+    "name": "grimorio",
+    "short_name": "grimorio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

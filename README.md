@@ -1,4 +1,4 @@
-# mvc_planejamento
+# grimorio
 
 A new Flutter project.
 
