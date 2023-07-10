@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../controllers/book_controller.dart';
-import '../models/personal_book.dart';
 import '../theme.dart';
 import 'components/display_text.dart';
 import 'components/primary_button.dart';
@@ -10,15 +8,13 @@ import 'edit_details.dart';
 import 'home.dart';
 
 class BookDetails extends StatefulWidget {
-  BookDetails({super.key, required this.book});
-  PersonalBook book;
+  BookDetails({super.key,});
 
   @override
   State<BookDetails> createState() => _BookDetailsState();
 }
 
 class _BookDetailsState extends State<BookDetails> {
-  final BookController bookController = BookController();
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +36,7 @@ class _BookDetailsState extends State<BookDetails> {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 16.0),
                     child: Image.network(
-                      widget.book.googleBook.thumbnailLink,
+                      "Image Link",
                       height: 220,
                       width: 144,
                       fit: BoxFit.cover,
@@ -49,7 +45,7 @@ class _BookDetailsState extends State<BookDetails> {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 8.0),
                     child: Text(
-                      widget.book.googleBook.title,
+                      "Book Title",
                       style: ModalDecorationProperties.bookTitle,
                     ),
                   ),
@@ -58,7 +54,7 @@ class _BookDetailsState extends State<BookDetails> {
                     child: SizedBox(
                       width: double.maxFinite,
                       child: Text(
-                        widget.book.googleBook.authors,
+                        "Book Authors",
                         style: ModalDecorationProperties.bookAuthor,
                       ),
                     ),
@@ -69,7 +65,7 @@ class _BookDetailsState extends State<BookDetails> {
                       children: [
                         Expanded(
                           child: Text(
-                            widget.book.googleBook.description,
+                            "Book Description",
                             maxLines: 4,
                             overflow: TextOverflow.ellipsis,
                           ),
@@ -99,7 +95,7 @@ class _BookDetailsState extends State<BookDetails> {
                     padding: const EdgeInsets.only(bottom: 8.0),
                     child: Row(children: <Widget>[
                       Text(
-                        widget.book.dayStarted,
+                        "Day started",
                         style: const TextStyle(
                             fontSize: 16, fontWeight: FontWeight.w600),
                       )
@@ -117,7 +113,7 @@ class _BookDetailsState extends State<BookDetails> {
                           ),
                         ),
                         Text(
-                          "Final da Leitura",
+                          "Day Started",
                           style: TextStyle(color: AppColors.mediumPink),
                         ),
                       ],
@@ -127,7 +123,7 @@ class _BookDetailsState extends State<BookDetails> {
                     padding: const EdgeInsets.only(bottom: 16.0),
                     child: Row(children: <Widget>[
                       Text(
-                        widget.book.dayFinished,
+                        "Day Finished",
                         style: const TextStyle(
                             fontSize: 16, fontWeight: FontWeight.w600),
                       )
@@ -148,7 +144,7 @@ class _BookDetailsState extends State<BookDetails> {
                     padding: const EdgeInsets.only(bottom: 32.0),
                     child: Row(
                       children: [
-                        Expanded(child: Text(widget.book.comments)),
+                        Expanded(child: Text("Book Comments")),
                       ],
                     ),
                   ),
@@ -158,18 +154,18 @@ class _BookDetailsState extends State<BookDetails> {
                       icon: Icons.edit,
                       text: "Editar",
                       onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => EditDetails(
-                                      book: widget.book,
-                                    ))).then((value) {
-                          setState(() {
-                            if (value != null) {
-                              widget.book = value;
-                            }
-                          });
-                        });
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //         builder: (context) => EditDetails(
+                        //               book: "book",
+                        //             ))).then((value) {
+                        //   setState(() {
+                        //     if (value != null) {
+                        //       "Update book";
+                        //     }
+                        //   });
+                        // });
                       },
                     ),
                   ),
@@ -179,12 +175,12 @@ class _BookDetailsState extends State<BookDetails> {
                       icon: Icons.delete,
                       text: "Excluir",
                       onTap: () {
-                        bookController.removeBook(widget.book);
-                        Navigator.pushAndRemoveUntil(
-                          context,
-                          MaterialPageRoute(builder: (context) => const Home()),
-                          (_) => false,
-                        );
+                        // Delete book
+                        // Navigator.pushAndRemoveUntil(
+                        //   context,
+                        //   MaterialPageRoute(builder: (context) => const Home()),
+                        //   (_) => false,
+                        // );
                       },
                     ),
                   ),
