@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 
 import '../theme.dart';
 import 'book_details.dart';
-import 'components/display_text.dart';
-import 'components/floating_button.dart';
+import 'display_text.dart';
+import 'floating_button.dart';
 import 'search_books.dart';
 
 class Home extends StatefulWidget {
@@ -29,6 +29,7 @@ class _HomeState extends State<Home> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Center(
+          child: _EmptyHome(),
           // Need connection with sqflite
           // child: FutureBuilder(
           //   future: "Future",
