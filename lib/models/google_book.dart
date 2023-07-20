@@ -31,7 +31,7 @@ class GoogleBook {
 
   validateTitle(Map<String, dynamic> map) => (map["volumeInfo"]["title"] == null) ? "Título desconhecido" : map["volumeInfo"]["title"];
 
-  validateThumbnail(Map<String, dynamic> map) => (map["volumeInfo"]["imageLinks"]?["thumbnail"] == null) ? "https://i.pinimg.com/736x/88/cb/ba/88cbba5cdbd59fa49462ab96f3b1b79c.jpg" : map["volumeInfo"]["imageLinks"]?["thumbnail"];
+  validateThumbnail(Map<String, dynamic> map) => (map["volumeInfo"]["imageLinks"]?["thumbnail"] == null) ? "https://placehold.co/200x290.png" : map["volumeInfo"]["imageLinks"]?["thumbnail"];
 
   String validateAuthors(Map<String, dynamic> map) => (map["volumeInfo"]["authors"] == null) ? "Autor desconhecido" : (map["volumeInfo"]["authors"] as List<dynamic>).map((e) => e).toString();
 
