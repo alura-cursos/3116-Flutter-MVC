@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'date_input.dart';
-import 'display_text.dart';
-import 'entry.dart';
-import 'primary_button.dart';
-import '../theme.dart';
+import 'components/date_input.dart';
+import 'components/display_text.dart';
+import 'components/entry.dart';
+import 'components/primary_button.dart';
+import '../../theme.dart';
 
 import 'home.dart';
 

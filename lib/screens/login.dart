@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:grimorio/display_text.dart';
-import 'package:grimorio/home.dart';
-import 'package:grimorio/primary_button.dart';
-import 'package:grimorio/sign_up.dart';
+import 'package:grimorio/screens/components/display_text.dart';
+import 'package:grimorio/screens/home.dart';
+import 'package:grimorio/screens/components/primary_button.dart';
+import 'package:grimorio/screens/sign_up.dart';
 import 'package:grimorio/theme.dart';
 
 class Login extends StatefulWidget {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../theme.dart';
-import 'display_text.dart';
-import 'primary_button.dart';
-import 'secondary_button.dart';
+import '../../theme.dart';
+import 'components/display_text.dart';
+import 'components/primary_button.dart';
+import 'components/secondary_button.dart';
 import 'edit_details.dart';
 import 'home.dart';
 

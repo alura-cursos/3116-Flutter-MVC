@@ -3,7 +3,7 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
-import 'google_book_service.dart';
+import '../services/google_book_service.dart';
 
 
 class PersonalBookDatabase {

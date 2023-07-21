@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:grimorio/date_input.dart';
+import 'package:grimorio/screens/components/date_input.dart';
 
-import '../theme.dart';
-import 'display_text.dart';
-import 'entry.dart';
-import 'primary_button.dart';
+import '../../theme.dart';
+import 'components/display_text.dart';
+import 'components/entry.dart';
+import 'components/primary_button.dart';
 
 class EditDetails extends StatefulWidget {
   const EditDetails({super.key,});
