@@ -11,4 +11,8 @@ class BookController {
     PersonalBook newBook = PersonalBook(dayStarted: dayStarted, dayFinished: dayFinished, comments: comments, googleBook: googleBook);
     personalBookDatabase.save(newBook);
   }
+
+  Future<List<PersonalBook>> getBooks() {
+    return personalBookDatabase.findAll();
+  }
 }
