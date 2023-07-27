@@ -1,16 +1,41 @@
-# grimorio
+![Mobile-Flutter com Arquitetura: MVC](capa.png)
 
-A new Flutter project.
+# Flutter com Arquitetura: MVC
 
-## Getting Started
+Projeto Meu Pequeno Grimório para o curso de Flutter com Arquitetura: MVC, focado em utilizar o padrão de projeto MVC em um projeto Flutter.
 
-This project is a starting point for a Flutter application.
+### Tópicos abordados no curso:
 
-A few resources to get you started if this is your first Flutter project:
+- O que é MVC;
+- Como estruturar o projeto seguindo o padrão MVC;
+- Trabalhar em conjunto com outras pessoas dentro de um projeto;
+- Planejamento e definição de arquitetura.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Este curso é indicado para pessoas que já tem conhecimento intermediário e querem aprofundar seu conhecimento em Flutter, seguindo boas práticas e também entendendendo como funciona arquitetura de software dentro dos padrões mobile.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📑 Requisitos
+
+- Conhecimentos intermediários de Flutter e Dart;
+- Android Studio ou VS Code (com plugins do Flutter e Dart instalados);
+- É importante ter o Flutter na versão 3.10.2.
+
+## ✨ Funcionalidades do projeto
+
+- Buscar livros da API do GoogleBook;
+- Salvar uma entrada no banco de dados;
+- Adicionar comentários, data de início de leitura e final de leitura;
+- Deletar uma entrada;
+- Editar uma entrada;
+
+<p align="center">
+  <img src="projeto.gif" alt= "GIF da aplicação desenvolvida." />
+</p> 
+
+## 🛠️ Abrir e rodar o projeto
+
+Aqui vem um passo a passo para abrir e rodar o projeto.
+
+- **Open an Existing Project** (ou alguma opção similar)
+- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
+- Por fim clique em OK
+- Depois basta rodar o comando `flutter run` na pasta do projeto
